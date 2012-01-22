@@ -9,9 +9,18 @@ var Schema = mongoose.Schema
   , ObjectId = Schema.ObjectId;
 
 var user = new Schema({
-      
+          
 })
 
 var course = new Schema({
-    author      
+      _id = ObjectId
+   ,  teacher     : String
+   ,  creator     : String
+   ,  startDate   : Date
+   ,  endDate     : Date
+   ,  repeat      : {type: Number, default: 7}
+   ,  startTime   : Date
+   ,  endTime     : Date
+   ,   
 });
+
